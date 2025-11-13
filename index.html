@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uranus Fazry MLBB Portal | X.Borg Tesla Maniac</title>
+    <title>UranusFazry MLBB Portal | X.Borg Tesla Maniac</title>
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -76,12 +76,12 @@
 
         /* Hide the video entirely in this theme */
         #bg-video {
-            opacity: 0;
-            z-index: 1;
+            opacity: 1; /* Diubah dari 0 ke 1 agar video terlihat */
+            z-index: 2; /* Dinaikkan agar di atas gambar */
         }
         
         #bg-image {
-            opacity: 0.4;
+            opacity: 0; /* Diubah dari 0.4 ke 0 agar gambar tersembunyi awalnya */
             z-index: 0;
         }
 
@@ -599,10 +599,10 @@
     <div id="bg-container">
         <video id="bg-video" class="bg-media" autoplay muted playsinline>
             <!-- The video is hidden in this theme but kept for functionality -->
-            <source src="" type="video/mp4">
+            <source src="https://files.catbox.moe/4gi6v5.mp4" type="video/mp4">
         </video>
         <!-- Use the provided X.Borg image as the static background -->
-        <img id="bg-image" class="bg-media" src="xborg.jpg" alt="X.Borg Tesla Maniac Background">
+        <img id="bg-image" class="bg-media" src="x" alt="X.Borg Tesla Maniac Background">
     </div>
     <canvas id="particle-canvas"></canvas>
 
@@ -613,7 +613,7 @@
                 <!-- Logo -->
                 <div id="logo-container" style="display: flex; align-items: center; cursor: pointer; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
                     <!-- Replace logo image with X.Borg avatar for a cohesive look -->
-                    <img src="xborg.jpg" alt="X.Borg Tesla Maniac Logo" class="logo-pulse" style="height: 50px; width: auto;" draggable="false">
+                    <img src="https://i.imghippo.com/files/EePl9866XxI.png" alt="X.Borg Tesla Maniac Logo" class="logo-pulse" style="height: 50px; width: auto;" draggable="false">
                     <span class="font-cinzel gold-text" style="font-weight: 700; font-size: 1.25rem; letter-spacing: 0.05em; margin-left: 1rem;">MLBB X.BORG</span>
                 </div>
 
@@ -697,7 +697,7 @@
             <div style="display: inline-block; margin-bottom: 1.5rem;">
                 <h1 class="font-playfair" data-text="TESLA MANIAC" style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; color: var(--gold);">TESLA MANIAC</h1>
             </div>
-            <p class="font-cinzel flame-text" style="font-size: 1.125rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">MLBB Content Creator & Web Developer</p>
+            <p class="font-cinzel flame-text" style="font-size: 1.125rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">MLBB Creator & Web Developer</p>
             <p style="max-width: 42rem; margin: 1.5rem auto 0; font-size: 1rem; line-height: 1.6; color: rgba(255, 0, 255, 0.8);">
             </p>
         </header>
